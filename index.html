@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="formulario-data">
+      <form>
+        <div>
+          <label for="dia">DAY</label>
+          <input type="number" name="dia" id="dia" placeholder="DD" max="31" min="1">
+        </div>
+        <div>
+          <label for="mes">MONTH</label>
+          <input type="number" name="mes" id="mes" placeholder="MM" max="12" min="1">
+        </div>
+        <div>
+          <label for="ano">YEAR</label>
+          <input type="number" name="ano" id="ano" placeholder="YYYY" max="2023" min="1920">
+        </div>
+      </form>
+      <button><img src="./assets/images/icon-arrow.svg" alt="Botão enviar"></button>
+    </section>
+
+    <section class="idade">
+      <h1><span>--</span> years</h1>
+      <h1><span>--</span> months</h1>
+      <h1><span>--</span> days</h1>
+    </section>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/victor-pagliuso-232458252/">Victor H. Pagliuso</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
