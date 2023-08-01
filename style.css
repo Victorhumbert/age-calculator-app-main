@@ -16,9 +16,8 @@ body {
 
 main {
   background: hsl(0, 0%, 100%);
-  justify-self: center;
-  align-self: center;
-  padding: 20px;
+  place-self: center;
+  padding: 40px;
   border-radius: 10px 10px 80px 10px;
   box-shadow: 1px 1px 5px 1px #ccc1;
   font-family: "Poppins", sans-serif;
@@ -28,6 +27,73 @@ img {
   max-width: 100%;
 }
 
-form{
+ul {
   display: flex;
+  gap: 20px;
+  margin-right: 120px;
+}
+form li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form li label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 5px;
+}
+
+form li input {
+  color: hsl(0, 1%, 44%);
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 5px;
+  max-width: 120px;
+}
+
+form li input:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn button {
+  background: hsl(259, 100%, 65%);
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  width: 62px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn::before {
+  content: "";
+  display: flex;
+  background: hsl(0, 0%, 94%);
+  width: 100%;
+  height: 1px;
+}
+
+button:hover,
+button:focus {
+  background: #000;
+}
+
+.idade h1 {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.idade span {
+  color: hsl(259, 100%, 65%);
 }
