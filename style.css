@@ -47,16 +47,23 @@ form li label {
 }
 
 form li input {
+  position: relative;
   color: hsl(0, 1%, 44%);
   font-size: 1.5rem;
   padding: 5px 10px;
   border: 1px solid hsl(0, 0%, 94%);
   border-radius: 5px;
   max-width: 120px;
+  width: 100%;
 }
 
+
 form li input:focus {
-  outline: 1px solid hsl(259, 100%, 65%);
+  outline: none;
+  border-top: 1px solid hsla(259, 100%, 65%, 0.6);
+  border-bottom: 1px solid hsla(259, 100%, 65%, 0.6);
+  border-left: 1px solid hsla(259, 100%, 90%, 0.6);
+  border-right: 1px solid hsla(259, 100%, 90%, 0.6);
 }
 
 .btn {
@@ -96,4 +103,8 @@ button:focus {
 
 .idade span {
   color: hsl(259, 100%, 65%);
+}
+
+.input-invalido {
+  border: solid 1px #f00;
 }
