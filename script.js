@@ -1,2 +1,2 @@
-import initTempoVivo from "./scripts/tempoVivo.js";
+import initTempoVivo from "./modules/tempoVivo.js";
 initTempoVivo();

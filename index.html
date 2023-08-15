@@ -28,17 +28,23 @@
     <section class="formulario-data">
       <form>
         <ul>
-          <li>
+          <li data-idade="day">
             <label for="dia">DAY</label>
             <input type="number" name="dia" id="dia" placeholder="DD" max="31" min="1" required>
+            <p data-input="invalid">Must be a valid day</p>
+            <p data-input="null">This field is required</p>
           </li>
-          <li>
+          <li data-idade="month">
             <label for="mes">MONTH</label>
             <input type="number" name="mes" id="mes" placeholder="MM" max="12" min="1" required>
+            <p data-input="invalid">Must be a valid month</p>
+            <p data-input="null">This field is required</p>
           </li>
-          <li>
+          <li data-idade="years">
             <label for="ano">YEAR</label>
             <input type="number" name="ano" id="ano" placeholder="YYYY" max="2023" min="1920" required>
+            <p data-input="invalid">Must be in the past</p>
+            <p data-input="null">This field is required</p>
           </li>
         </ul>
         <div class="btn">
@@ -59,7 +65,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.linkedin.com/in/victor-pagliuso-232458252/">Victor H. Pagliuso</a>.
   </div>
-  <script src="./script.js" type="module"></script>
+
+  <script src="./modules/tempoVivo.js"></script>
 </body>
 
 </html>
